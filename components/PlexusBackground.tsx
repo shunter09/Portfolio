@@ -5,8 +5,8 @@ import { useEffect, useRef } from 'react';
 type Dot = { x: number; y: number; vx: number; vy: number };
 
 export default function PlexusBackground({
-                                             dotColor = '255,255,255',
-                                             lineColor = '255,255,255',
+                                             dotColor = '250,245,235',
+                                             lineColor = '250,245,235',
                                              className = '',
                                          }: Readonly<{ dotColor?: string; lineColor?: string; className?: string }>) {
     const canvasRef = useRef<HTMLCanvasElement>(null);
