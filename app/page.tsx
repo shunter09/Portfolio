@@ -1,14 +1,20 @@
 import PlexusBackground from "@/components/PlexusBackground";
 import Image from "next/image";
 import Card from "@/components/card";
+import React from "react";
 
+import TechnicalSkills from "@/components/tabs";
+import Contact from "@/components/contact";
+
+
+const sectStyle = "flex min-h-dvh snap-start flex-col items-center justify-center gap-8 bg-[#faf5eb] px-5 py-16 text-[#0f172a] md:gap-10 md:px-9"
 export default function Home() {
     return (
         <main className="h-dvh snap-y snap-proximity overflow-y-scroll scroll-smooth bg-[#0f172a] text-[#faf5eb]">
 
             <section
                 id="about"
-                className="relative flex min-h-dvh snap-start items-center justify-center overflow-hidden bg-[#0f172a] px-5 py-12 md:px-9 md:py-0"
+                className="relative min-h-dvh flex snap-start items-center justify-center overflow-hidden bg-[#0f172a] px-5 py-10 md:px-9 md:py-0"
             >
                 <PlexusBackground/>
 
@@ -20,7 +26,7 @@ export default function Home() {
                         height={300}
                         alt="Headshot Photo"
                         loading="eager"
-                        className="h-auto w-56 rounded-3xl object-cover ring-4 ring-[#fb7185] md:w-72"
+                        className="h-auto w-56 rounded-full object-cover ring-4 ring-[#fb7185] md:w-72"
                     />
 
                     <div className="flex flex-col gap-3 text-center md:text-left">
@@ -34,7 +40,18 @@ export default function Home() {
                 </div>
             </section>
 
-            <Card />
+            <Card/>
+
+            <section className={sectStyle}>
+                <h2 className="text-center text-4xl md:text-5xl">Technical Skills</h2>
+
+                <TechnicalSkills/>
+
+                    <Contact/>
+
+            </section>
+
+
         </main>
     );
 }

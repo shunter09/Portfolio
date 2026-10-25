@@ -10,7 +10,7 @@ export default function Card() {
 
             <div className="flex w-full max-w-6xl flex-col items-center justify-center gap-6 lg:flex-row lg:items-stretch lg:gap-10">
                 <a
-                    href="https://avenue-seekers.vercel.app/"
+                    href="https://portfolio-six-phi-sibv806zj8.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full min-w-0 max-w-xl lg:w-1/2 lg:max-w-none"
@@ -18,10 +18,10 @@ export default function Card() {
                     <div className="hover-3d h-full">
                         <figure className="flex h-full flex-col gap-4 rounded-xl bg-[#0f172a] p-3 text-[#faf5eb] shadow-xl md:p-4">
                             <h3 className="px-2 pt-2 font-sono text-xl text-[#fb7185] sm:text-2xl md:text-3xl">
-                                AvenueSeekers
+                                MyPortfolio
                             </h3>
                             <Image
-                                src="/website.png"
+                                src="/website2.png"
                                 alt="AvenueSeekers website preview"
                                 width={1600}
                                 height={900}
@@ -29,16 +29,10 @@ export default function Card() {
                                 className="h-auto w-full rounded-lg"
                             />
                             <p className="text-sm md:text-base">
-                                A website that allows users to find job, internship, and volunteer opportunities. Jobs,
-                                Internships, and Volunteer posting are all aggregated using Zenrows Job Scraping API (or
-                                other methods if needed) - which means there is no Sign-In or Log-In needed.
+                                A Portfolio for others to get to know more about me, my featured projects, the languages, tools, and frameworks I know, my resume, and how to further contact me.
                             </p>
                             <div className="flex flex-wrap gap-2">
                                 <div className="w-20 badge badge-success">Next.js</div>
-                                <div className="w-23 badge badge-success">Springboot</div>
-                                <div className="w-23 badge badge-success">PostgreSQL</div>
-                                <div className="w-23 badge badge-success">Zenrows API</div>
-                                <div className="w-21 badge badge-success">SonarQube</div>
                             </div>
                             <div className="mt-auto flex flex-row flex-wrap items-center gap-x-4 gap-y-2 font-bold">
                                 <div className="flex items-center gap-1">
@@ -84,7 +78,7 @@ export default function Card() {
                                             d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3l5.571-3m-11.142 0L2.25 7.5L12 2.25l9.75 5.25l-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75L2.25 16.5l4.179-2.25m11.142 0l-5.571 3l-5.571-3"
                                         />
                                     </svg>
-                                    <h3>Fullstack</h3>
+                                    <h3>Frontend</h3>
                                 </div>
                             </div>
                         </figure>
@@ -100,7 +94,7 @@ export default function Card() {
                     </div>
                 </a>
 
-                {/* Second card: identical classes to the first */}
+
                 <a
                     href="https://avenue-seekers.vercel.app/"
                     target="_blank"
@@ -126,11 +120,11 @@ export default function Card() {
                                 other methods if needed) - which means there is no Sign-In or Log-In needed.
                             </p>
                             <div className="flex flex-wrap gap-2">
-                                <div className="w-20 badge badge-success">Next.js</div>
-                                <div className="w-23 badge badge-success">Springboot</div>
-                                <div className="w-23 badge badge-success">PostgreSQL</div>
-                                <div className="w-23 badge badge-success">Zenrows API</div>
-                                <div className="w-21 badge badge-success">SonarQube</div>
+                                <div className="w-20 badge badge-success ">Next.js</div>
+                                <div className="w-23 badge badge-success ">Springboot</div>
+                                <div className="w-23 badge badge-success ">PostgreSQL</div>
+                                <div className="w-23 badge badge-success ">Zenrows API</div>
+                                <div className="w-21 badge badge-success ">SonarQube</div>
                             </div>
                             <div className="mt-auto flex flex-row flex-wrap items-center gap-x-4 gap-y-2 font-bold">
                                 <div className="flex items-center gap-1">

@@ -6,12 +6,12 @@ export default function Navbar(){
     return (
         <nav
             aria-label="Main"
-            className="fixed left-1/2 top-3 z-50 flex w-[calc(100%-1.5rem)] max-w-4xl -translate-x-1/2 items-center justify-around gap-1 rounded-2xl bg-white/80 p-2 text-black shadow-xl backdrop-blur sm:top-6 sm:gap-3"
+            className=" fixed left-1/2 top-3 z-50 flex w-[calc(100%-1.5rem)] max-w-4xl -translate-x-1/2 items-center justify-around gap-1 rounded-2xl bg-white/80 p-2 text-black shadow-xl backdrop-blur sm:top-6 sm:gap-3"
         >
             <a href="#about" className={transition} >About</a>
             <a href="#projects" className={transition} >Projects</a>
-            <a href="#section" className={transition} >Resume</a>
-            <a href="#section" className={transition} >Contact</a>
+            <a href="#contact" className={transition} >Resume</a>
+            <a href="#contact" className={transition} >Contact</a>
 
         </nav>
     );
