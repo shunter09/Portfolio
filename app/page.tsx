@@ -1,79 +1,61 @@
+import PlexusBackground from "@/components/PlexusBackground";
+import Image from "next/image";
+import Card from "@/components/card";
 import React from "react";
-import {Mail} from "lucide-react";
-import GithubIcon from "@/components/GitHubIcon";
-import LinkedinIcon from "@/components/LinkedinICON";
-import {Separator} from "@/components/ui/separator"
-import ResumeIcon from "@/components/File";
+
+import TechnicalSkills from "@/components/tabs";
+import Contact from "@/components/contact";
 
 
-const iconLink =
-    "flex h-12 w-12 items-center justify-center rounded-2xl transition-colors duration-300 hover:bg-[#faf5eb]/10 hover:text-[#fb7185] focus-visible:bg-[#faf5eb]/10 focus-visible:outline-2 focus-visible:outline-[#fb7185]";
-
-export default function Contact() {
+const sectStyle = "flex min-h-dvh flex-col items-center justify-center gap-8 bg-[#faf5eb] px-5 py-16 text-[#0f172a] md:gap-10 md:px-9"
+export default function Home() {
     return (
-        <footer
-            id="contact"
-            className="flex  flex-col items-center justify-center gap-8 rounded-xl bg-[#0f172a] px-5 py-16 text-center text-[#faf5eb] md:px-9 "
-        >
-            <div className="flex max-w-xl flex-col gap-4">
-                <h2 className="font-sono text-4xl tracking-tight md:text-5xl">
-                    Let&apos;s work together
-                </h2>
-                <p className="text-base text-[#faf5eb]/70 md:text-lg">
-                    I&apos;m open to internships, entry-level roles, and collaborations.
-                    Have an idea or a project? I&#39;d love to hear about it.
-                </p>
-            </div>
+        <main className="h-dvh  overflow-y-scroll scroll-smooth bg-[#0f172a] text-[#faf5eb]">
 
-            <a
-                href="mailto:sumirahhunter@gmail.com"
-                className="inline-flex items-center gap-2 rounded-2xl bg-[#fb7185] px-8 py-3 font-semibold text-[#0f172a] transition-colors duration-300 hover:bg-[#fda4af] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#faf5eb]"
+            <section
+                id="about"
+                className="relative min-h-dvh flex items-center justify-center overflow-hidden bg-[#0f172a] px-5 py-10 md:px-9 md:py-0"
             >
-                <Mail className="h-5 w-5" aria-hidden="true" focusable="false"/>
-                Reach Out
-            </a>
-            <a
-                href="/Sumirah%20Hunter-1.png" download="/Sumirah%20Hunter-1.png" target="_blank"
-                className="inline-flex items-center gap-2 rounded-2xl bg-[#fb7185] px-8 py-3 font-semibold text-[#0f172a] transition-colors duration-300 hover:bg-[#fda4af] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#faf5eb]"
-            >
-                <ResumeIcon/>
-                View Resume
-            </a>
-            <a href="/Sumirah_Aptitude_Results.zip" download="/Sumirah_Aptitude_Results.zip" target="blank"
-               className="inline-flex items-center gap-2 rounded-2xl bg-[#fb7185] px-8 py-3 font-semibold text-[#0f172a] transition-colors duration-300 hover:bg-[#fda4af] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#faf5eb]">
-                <ResumeIcon/>
-                YouScience
-            </a>
-            <h1>Phone: 423-503-7872</h1>
-            <ul className="flex flex-wrap items-center justify-center gap-3">
-                <li>
-                    <a
-                        href="https://github.com/shunter09"
-                        aria-label="GitHub"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={iconLink}
-                    >
-                        <GithubIcon/>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.linkedin.com/in/sumirah-hunter-0498b2446"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex h-12 items-center rounded-2xl px-4 text-sm transition-colors duration-300 hover:bg-[#faf5eb]/10 hover:text-[#fb7185] focus-visible:bg-[#faf5eb]/10 focus-visible:outline-2 focus-visible:outline-[#fb7185]"
-                    >
-                        <LinkedinIcon/>
-                    </a>
-                </li>
-            </ul>
+                <PlexusBackground/>
 
-            <p className=" text-xs text-[#faf5eb]/50">
-                Usually reply within a day or two.
-            </p>
-            <Separator/>
-            <p className=" text-xs text-[#faf5eb]/50">&#169;2026 All Rights Reserved</p>
-        </footer>
+                <div
+                    className="relative z-10 flex w-full max-w-6xl flex-col items-center gap-10 font-fredoka md:flex-row md:justify-center">
+                    <Image
+                        src="/headshot.png"
+                        width={300}
+                        height={300}
+                        alt="Headshot Photo"
+                        loading="eager"
+                        className="h-auto w-56 rounded-full object-cover ring-4 ring-[#fb7185] md:w-72"
+                    />
+
+                    <div className="flex flex-col gap-3 text-center md:text-left">
+                        <h1>My name is...</h1>
+                        <h1 className="text-5xl font-semibold text-[#faf5eb] md:text-6xl">
+                            Sumirah Hunter
+                        </h1>
+                        <h1 className="text-xl text-[#fb7185] md:text-2xl">
+                            I enjoy building things
+                        </h1>
+
+                        <p className="">I&#39;m a Software Engineering student <br/> who specializes in Full-Stack Development.<br/> Currently, I am a student at STEM School Chattanooga, <br/> building fullstack applications.</p>
+
+                    </div>
+                </div>
+            </section>
+
+            <Card/>
+
+            <section className={sectStyle}>
+                <h2 className="text-center text-4xl md:text-5xl">Technical Skills</h2>
+
+                <TechnicalSkills/>
+
+                    <Contact/>
+
+            </section>
+
+
+        </main>
     );
 }
