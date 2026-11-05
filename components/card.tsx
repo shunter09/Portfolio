@@ -10,7 +10,7 @@ export default function Card() {
 
             <div className="flex w-full max-w-6xl flex-col items-center justify-center gap-6 lg:flex-row lg:items-stretch lg:gap-10">
                 <a
-                    href="https://portfolio-six-phi-sibv806zj8.vercel.app/"
+                    href="https://github.com/shunter09/Portfolio.git"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full min-w-0 max-w-xl lg:w-1/2 lg:max-w-none"
@@ -96,7 +96,7 @@ export default function Card() {
 
 
                 <a
-                    href="https://avenue-seekers.vercel.app/"
+                    href="https://github.com/shunter09/AvenueSeekers.git"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full min-w-0 max-w-xl lg:w-1/2 lg:max-w-none"
