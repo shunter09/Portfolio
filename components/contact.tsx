@@ -1,8 +1,8 @@
 import React from "react";
-import { Mail } from "lucide-react";
+import {Mail} from "lucide-react";
 import GithubIcon from "@/components/GitHubIcon";
 import LinkedinIcon from "@/components/LinkedinICON";
-import { Separator } from "@/components/ui/separator"
+import {Separator} from "@/components/ui/separator"
 import ResumeIcon from "@/components/File";
 
 
@@ -13,7 +13,7 @@ export default function Contact() {
     return (
         <footer
             id="contact"
-            className="flex snap-start flex-col items-center justify-center gap-8 rounded-xl bg-[#0f172a] px-5 py-16 text-center text-[#faf5eb] md:px-9 "
+            className="flex  flex-col items-center justify-center gap-8 rounded-xl bg-[#0f172a] px-5 py-16 text-center text-[#faf5eb] md:px-9 "
         >
             <div className="flex max-w-xl flex-col gap-4">
                 <h2 className="font-sono text-4xl tracking-tight md:text-5xl">
@@ -29,17 +29,22 @@ export default function Contact() {
                 href="mailto:sumirahhunter@gmail.com"
                 className="inline-flex items-center gap-2 rounded-2xl bg-[#fb7185] px-8 py-3 font-semibold text-[#0f172a] transition-colors duration-300 hover:bg-[#fda4af] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#faf5eb]"
             >
-                <Mail className="h-5 w-5" aria-hidden="true" focusable="false" />
+                <Mail className="h-5 w-5" aria-hidden="true" focusable="false"/>
                 Reach Out
             </a>
             <a
-                href="/Sumirah%20Hunter-1.png" target="_blank"
+                href="/Sumirah%20Hunter-1.png" download="/Sumirah%20Hunter-1.png" target="_blank"
                 className="inline-flex items-center gap-2 rounded-2xl bg-[#fb7185] px-8 py-3 font-semibold text-[#0f172a] transition-colors duration-300 hover:bg-[#fda4af] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#faf5eb]"
             >
                 <ResumeIcon/>
                 View Resume
             </a>
-
+            <a href="/Sumirah_Aptitude_Results.zip" download="/Sumirah_Aptitude_Results.zip" target="blank"
+               className="inline-flex items-center gap-2 rounded-2xl bg-[#fb7185] px-8 py-3 font-semibold text-[#0f172a] transition-colors duration-300 hover:bg-[#fda4af] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#faf5eb]">
+                <ResumeIcon/>
+                YouScience
+            </a>
+            <h1>Phone: 423-503-7872</h1>
             <ul className="flex flex-wrap items-center justify-center gap-3">
                 <li>
                     <a
@@ -49,7 +54,7 @@ export default function Contact() {
                         rel="noopener noreferrer"
                         className={iconLink}
                     >
-                        <GithubIcon />
+                        <GithubIcon/>
                     </a>
                 </li>
                 <li>
